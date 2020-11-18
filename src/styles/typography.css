@@ -1,16 +1,6 @@
-.text-btn{
-text-transform: uppercase;
-color: #A03058;
-transition: all 0.15s linear;
-font-size: 0.95rem;
-font-weight: normal;
+h1{
+    color: #25888C;
 }
-
-.text-btn:hover{
-    cursor: pointer;
-    font-weight: bolder;
-}
-
 
 .subtext{ 
     color: rgb(139, 139, 139) ;

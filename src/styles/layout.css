@@ -1,12 +1,16 @@
 #app {
   font-family: Montserrat, sans-serif;
-  color: #25292e;
-  background-color: #ffffff;
-  background: url("~@/assets/background.jpg") no-repeat center center fixed;
+  background: rgb(23, 49, 125);
+  background: linear-gradient(
+    142deg,
+    rgb(7, 21, 63) 0%,
+    rgb(46, 11, 66) 100%
+  );
+  /*   background: url("~@/assets/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 
 #particles-js {

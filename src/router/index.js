@@ -15,34 +15,19 @@ Vue.use(VueRouter)
   //   component: () => import('../views/Home.vue')
   // },
   {
-    path: '/about',
-    name:"about",
-    component: () => import('../views/About.vue')
+    path: '/personal',
+    name:"personal",
+    component: () => import('../views/Personal.vue')
   },
   {
-    path: '/jobs',
-    name:"jobs",
-    component: () => import('../views/Jobs.vue')
+    path: '/portfolio',
+    name:"portfolio",
+    component: () => import('../views/Portfolio.vue')
   },
   {
-    path: '/technologies',
-    name:"technologies",
-    component: () => import('../views/Tech.vue')
-  },
-  {
-    path: '/applications',
-    name:"applications",
-    component: () => import('../views/Applications.vue')
-  },
-  {
-    path: '/downloads',
-    name:"downloads",
-    component: () => import('../views/Downloads.vue')
-  },
-  {
-    path: '/contact',
-    name:"contact",
-    component: () => import('../views/Contact.vue')
+    path: '/gallery',
+    name:"gallery",
+    component: () => import('../views/Gallery.vue')
   }
 ]
 

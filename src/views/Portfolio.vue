@@ -1,6 +1,6 @@
 <template>
   <div class="pa-10 slide-in">
-    <h1 class="primary--text text-uppercase">Contact</h1>
+    <h1 class="primary--text text-uppercase">Portfolio</h1>
     <p class="font-italic">-- In progress --</p>
   </div>
 </template>
