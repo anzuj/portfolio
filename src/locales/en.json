@@ -1,0 +1,29 @@
+{
+  "nav":{
+    "home":"HOME",
+"about": "ABOUT US",
+"tech": "TECHNOLOGY",
+"applications":"APPLICATIONS",
+"download": "DOWNLOAD",
+"jobs":"JOBS",
+"contact":"CONTACT"
+
+    
+  },
+  "home": {
+    "title": "A Swiss engineering company specialized in evaporation and crystallization technology",
+    "head": "HEAD OFFICE SWITZERLAND",
+    "phone": "Phone",
+    "award": "Enterprise Award 2013 of the Canton Argovia, Switzerland",
+    "awardText": "In the category service and commercial enterprises EVATHERM Ltd has been awarded with the 1st rank!"
+  },
+
+  "about": {
+    "us": "ABOUT US",
+    "intro": "EVATHERM is a group of companies with worldwide activities in the field of process engineering focused on evaporation and crystallization.",
+    "1": "EVATHERM is an independent company, majority owned by its employees. The head office of the group is located in Switzerland. In addition to branch offices in Germany and Hungary, representatives and agencies in numerous countries guarantee direct contact with its customers.",
+    "2": "EVATHERM was founded in the early eighties by specialists highly experienced in thermodynamics and process engineering. The company founders worked before for more then 20 years in the evaporation department of the former ESCHER WYSS. In the very beginning of its history, EVATHERM has been for 10 years a member of the former HPD group (USA). This close cooperation resulted in an exciting merge of the different crystallization experiences.",
+    "3": "Within a short time, the company has developed into a medium size contractor and as a result of its comprehensive technological know how, is now established in the international market with a top ranking among the leading suppliers of evaporation and crystallization plants.",
+    "4": "EVATHERM's engineers are continuously improving the company's expertise by innovative research and development of new technologies. Their effort is documented in the extensive reference list of satisfied customers."
+  }
+}

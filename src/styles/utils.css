@@ -1,0 +1,27 @@
+
+
+.v-tooltip__content.menuable__content__active {
+    opacity: 1!important;
+  }
+
+.red-gradient{
+    background: linear-gradient(to bottom right, rgb(131, 63, 95), rgb(87, 29, 53) )
+}
+
+.transitioned{
+    transition: 0.15s linear all;
+}
+
+
+.pos-absolute {
+    position: absolute !important;
+}
+
+.pos-relative {
+    position: relative !important;
+}
+
+.hover-pointer:hover{
+cursor: pointer
+}
+
