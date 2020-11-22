@@ -46,17 +46,19 @@
           <v-icon x-large>mdi-chevron-down</v-icon>
       </v-row>
 
-  <Skillicons />
+  <Skillcards />
+    <Skillicons />
     </v-container>
    
 
 </template>
 
 <script>
+import Skillcards from "@/components/Skillcards.vue";
 import Skillicons from "@/components/Skillicons.vue";
 export default {
   props: [""],
-  components: { Skillicons },
+  components: { Skillcards, Skillicons },
   data: () => ({
     socialItems: [
       { link: "https://www.facebook.com/anzelika91", icon: "mdi-facebook" },

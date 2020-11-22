@@ -1,19 +1,108 @@
 <template>
-<div>
-    <h1 class="mt-10 mb-5 text-center">SKILLS</h1>
+  <div>
+    <!-- BASICS -->
+    <h3 class="mt-10 mb-5 text-center">Basics</h3>
+    <v-row justify="center">
+      <div v-for="item in basics" :key="item.text">
+        <v-tooltip bottom max-width="300" color="transparent">
+          <template v-slot:activator="{ on, attrs }">
+            <div class="skillicon-box" v-bind="attrs" v-on="on">
+              <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
+              <v-img
+                v-else
+                :src="require(`@/assets/devicons/${item.img}.png`)"
+                alt="skill icon"
+                class="skillimage"
+                contain
+              ></v-img>
+              <p>{{ item.text }}</p>
+            </div>
+          </template>
+          <v-card class="skilltooltip">
+            <span>{{ item.description }}</span>
+          </v-card>
+        </v-tooltip>
+      </div> 
+    </v-row>
 
-  <v-row justify="center">
-    <v-col class="skill" v-for="skill in skills" :key="skill.title">
-      <div class="icon-container">
-        <i :class="skill.icon"></i>
+      <v-divider class="my-5"></v-divider>
+
+    <!-- WIREFRAMING-->
+    <h3 class="mb-5 text-center">Wireframing & prototyping</h3>
+    <v-row justify="center">
+      <div v-for="item in wireframing" :key="item.text">
+        <v-tooltip bottom max-width="300" color="transparent">
+          <template v-slot:activator="{ on, attrs }">
+            <div class="skillicon-box" v-bind="attrs" v-on="on">
+              <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
+              <v-img
+                v-else
+                :src="require(`@/assets/devicons/${item.img}.png`)"
+                alt="skill icon"
+                class="skillimage"
+                contain
+              ></v-img>
+              <p>{{ item.text }}</p>
+            </div>
+          </template>
+          <v-card class="skilltooltip">
+            <span>{{ item.description }}</span>
+          </v-card>
+        </v-tooltip>
       </div>
-      <h3>{{ skill.title }}</h3>
-      <p>
-        {{ skill.text }}
-      </p>
-    </v-col>
-  </v-row>
+    </v-row>
 
+   <v-divider class="my-5"></v-divider>
+    <!-- FRONTEND-->
+    <h3 class="mb-5 text-center">Frontend</h3>
+    <v-row justify="center">
+      <div v-for="item in frontend" :key="item.text">
+        <v-tooltip bottom max-width="300" color="transparent">
+          <template v-slot:activator="{ on, attrs }">
+            <div class="skillicon-box" v-bind="attrs" v-on="on">
+              <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
+              <v-img
+                v-else
+                :src="require(`@/assets/devicons/${item.img}.png`)"
+                alt="skill icon"
+                class="skillimage"
+                contain
+              ></v-img>
+              <p>{{ item.text }}</p>
+            </div>
+          </template>
+          <v-card class="skilltooltip">
+            <span>{{ item.description }}</span>
+          </v-card>
+        </v-tooltip>
+      </div>
+    </v-row>
+
+   <v-divider class="my-5"></v-divider>
+    <!-- learning-->
+    <h3 class="mb-5 text-center">Learning</h3>
+    <v-row justify="center">
+      <div v-for="item in learning" :key="item.text">
+        <v-tooltip bottom max-width="300" color="transparent">
+          <template v-slot:activator="{ on, attrs }">
+            <div class="skillicon-box" v-bind="attrs" v-on="on">
+              <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
+              <v-img
+                v-else
+                :src="require(`@/assets/devicons/${item.img}.png`)"
+                alt="skill icon"
+                class="skillimage"
+                contain
+              ></v-img>
+              <p>{{ item.text }}</p>
+            </div>
+          </template>
+          <v-card class="skilltooltip">
+            <span>{{ item.description }}</span>
+          </v-card>
+        </v-tooltip>
+      </div>
+    </v-row>
   </div>
 </template>
 
@@ -22,24 +111,132 @@ export default {
   props: [""],
   components: {},
   data: () => ({
-    skills: [
+    basics: [
       {
-        title: "WEB DESIGN",
-        icon: "fas fa-pencil-ruler",
-        text:
-          "Aesthetically pleasing website is more than just pixelated information, right? In my hands, every project deserves going for the extra mile finding the exact right color scheme, layout and font.",
+        img: "vscode",
+        icon: null,
+        text: "VS Code",
+        description: "Where the magic happens",
       },
       {
-        title: "WEB DEVELOPMENT",
-        icon: "fas fa-laptop-code",
-        text:
-          "Lately I prefer to build web with Vue, utilising Vuetify library to create polished UIs. Vue has become my favourite framework since it optimises performance (no one likes laggy apps!) and makes dynamic content rendering a breeze.",
+        img: null,
+        icon: "devicon-git-plain colored",
+        text: "Git",
+        description:
+          "Version control. Remotely comfortable both with Github and Bitbucket",
       },
       {
-        title: "GRAPHIC DESIGN",
-        icon: "fas fa-paint-brush",
-        text:
-          "Illustrative design has been one of my creative hobbies for years. I'm no stranger to fiddling around in Photoshop layers, drawing cartoons or making mockups of a website.",
+        img: "confluence",
+        icon: null,
+        text: "Confluence",
+        description: "Internal docs/guidelines",
+      },
+    ],
+    wireframing: [
+      {
+        img: "balsamiq",
+        icon: null,
+        text: "Balsamiq",
+        description: "My tool of choice for basic interactive wireframing",
+      },
+      {
+        img: "proto",
+        icon: null,
+        text: "Proto.io",
+        description:
+          "When a more polished and stylised clickable prototype is needed, I use Proto.io.",
+      },
+    ],
+    frontend: [
+      {
+        icon: null,
+        img: "vue",
+        text: "VueJS",
+        description:
+          "My JS framework of choice. Working on 2.3, but upgrading to latest version 3 is in the books for the near future.",
+      },
+      {
+        img: "vuetify",
+        icon: null,
+        text: "Vuetify",
+        description: "A natural companion for VueJS applications.",
+      },
+      {
+        icon: "devicon-css3-plain colored",
+        img: null,
+        text: "CSS",
+        description: "A fan of CSS micro animations to make UIs feel great.",
+      },
+      {
+        icon: null,
+        img: "sass",
+        text: "SASS",
+        description:
+          "When I'm not using a front end library that manages most micro-animations and styling, I implement my own CSS with the convenient syntax that SASS offers.",
+      },
+      {
+        icon: "devicon-bootstrap-plain colored",
+        img: null,
+        text: "Bootstrap",
+        description:
+          "Used more in the early years of my web development. Can maintain Bootstrap applications if needed, but it's not my 1st choice of a front end library due to its bloated syntax (prefer Vuetify/Material Design).",
+      },
+      {
+        icon: "devicon-javascript-plain colored",
+        img: null,
+        text: "Javascript",
+        description: "A great ally to make smart UIs as dry as possible.",
+      },
+      {
+        icon: "devicon-jquery-plain colored",
+        img: null,
+        text: "jQuery",
+        description:
+          "Learned along with Bootstrap back when it was still built on jQuery. Not coding with jQuery anymore since my vanilla JS skills have increased and I've moved on to use frameworks that have in-built solutions for jQuery methods.",
+      },
+      {
+        icon: null,
+        img: "api",
+        text: "REST API",
+        description: "Building applications hand in hand with API requests.",
+      },
+      {
+        icon: null,
+        img: "jest",
+        text: "Unit testing",
+        description: "Using Jest to build unit tests for my interfaces.",
+      },
+    ],
+    illustration: [
+      {
+        img: "photoshop",
+        icon: null,
+        text: "Photoshop",
+        description:
+          "If needed, I touch up my artistic work on a computer using Photoshop. It's often used in my workflow as a developer as well to illustrate propositions for UI changes to the team.",
+      },
+      {
+        img: "procreate",
+        icon: null,
+        text: "Procreate",
+        description:
+          "I ditched big clumsy drawing boards in favor of an iPad Pro. It's an absolute joy to create designs and illustrations using Procreate.",
+      },
+    ],
+    learning: [
+      {
+        img: null,
+        icon: "devicon-react-original colored",
+        text: "ReactJS",
+        description:
+          "In the middle of an online ReactJS bootcamp. I've built basic to-do apps to get the grasp on React state management and how it differs from Vue",
+      },
+      {
+        img: "jest",
+        icon: null,
+        text: "Unit testing",
+        description:
+          "Topic I always keep at the back of my mind to try and make my codebase as easily maintainable as possible.",
       },
     ],
   }),
@@ -49,27 +246,34 @@ export default {
 </script>
 
 <style scoped>
-.skill {
+h3{
+    color: teal;
+}
+
+.skillicon-box {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  width: 100px;
 }
 
-.icon-container {
-  width: 10rem;
-  height: 10rem;
-  border: 1px solid #6c4a88;
-  background-color: #a8a5a81a;
-  margin-bottom: 3rem;
-  display: flex;
-  transform: rotate(45deg);
+.skillicon,
+.skillimage {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  transition: 0.15s all;
 }
 
-.icon-container i {
-  color: white;
-  font-size: 5rem;
-  margin: auto;
-  transform: rotate(-45deg);
+.skillicon-box:hover .skillicon,
+.skillicon-box:hover .skillimage {
+  transform: scale(1.05) translateY(-3px);
+}
+
+.skilltooltip {
+  background-color: #140729 !important;
+  padding: 10px;
+  border: 1px solid rgb(73, 15, 78) !important;
 }
 </style>
