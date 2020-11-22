@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-10 slide-in aboutContainer">
+  <v-container class="pa-10 slide-in-top aboutContainer">
     <h1 class="primary--text">{{ $t("nav.about") }}</h1>
 
     <v-row justify="center">

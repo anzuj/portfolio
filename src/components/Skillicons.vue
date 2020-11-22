@@ -1,115 +1,126 @@
 <template>
   <div>
     <!-- BASICS -->
-    <h3 class="mt-10 mb-5 text-center">Basics</h3>
-    <v-row justify="center">
-      <div v-for="item in basics" :key="item.text">
-        <v-tooltip bottom max-width="300" color="transparent">
-          <template v-slot:activator="{ on, attrs }">
-            <div class="skillicon-box" v-bind="attrs" v-on="on">
-              <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
-              <v-img
-                v-else
-                :src="require(`@/assets/devicons/${item.img}.png`)"
-                alt="skill icon"
-                class="skillimage"
-                contain
-              ></v-img>
-              <p>{{ item.text }}</p>
-            </div>
-          </template>
-          <v-card class="skilltooltip">
-            <span>{{ item.description }}</span>
-          </v-card>
-        </v-tooltip>
-      </div> 
-    </v-row>
+    <section>
+  <h3>Basics</h3>
+      <v-row justify="center">
+        <div v-for="item in basics" :key="item.text">
+          <v-tooltip top max-width="300" color="transparent">
+            <template v-slot:activator="{ on, attrs }">
+              <div class="skillicon-box" v-bind="attrs" v-on="on">
+                <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
+                <v-img
+                  v-else
+                  :src="require(`@/assets/devicons/${item.img}.png`)"
+                  alt="skill icon"
+                  class="skillimage"
+                  contain
+                ></v-img>
+                <p>{{ item.text }}</p>
+              </div>
+            </template>
+            <v-card class="skilltooltip">
+              <span>{{ item.description }}</span>
+            </v-card>
+          </v-tooltip>
+        </div>
+      </v-row>
 
-      <v-divider class="my-5"></v-divider>
+      <!-- <Divider /> -->
+    </section>
 
     <!-- WIREFRAMING-->
-    <h3 class="mb-5 text-center">Wireframing & prototyping</h3>
-    <v-row justify="center">
-      <div v-for="item in wireframing" :key="item.text">
-        <v-tooltip bottom max-width="300" color="transparent">
-          <template v-slot:activator="{ on, attrs }">
-            <div class="skillicon-box" v-bind="attrs" v-on="on">
-              <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
-              <v-img
-                v-else
-                :src="require(`@/assets/devicons/${item.img}.png`)"
-                alt="skill icon"
-                class="skillimage"
-                contain
-              ></v-img>
-              <p>{{ item.text }}</p>
-            </div>
-          </template>
-          <v-card class="skilltooltip">
-            <span>{{ item.description }}</span>
-          </v-card>
-        </v-tooltip>
-      </div>
-    </v-row>
+    <section>
+      <h3>Prototyping</h3>
+      <v-row justify="center">
+        <div v-for="item in wireframing" :key="item.text">
+          <v-tooltip top max-width="300" color="transparent">
+            <template v-slot:activator="{ on, attrs }">
+              <div class="skillicon-box" v-bind="attrs" v-on="on">
+                <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
+                <v-img
+                  v-else
+                  :src="require(`@/assets/devicons/${item.img}.png`)"
+                  alt="skill icon"
+                  class="skillimage"
+                  contain
+                ></v-img>
+                <p>{{ item.text }}</p>
+              </div>
+            </template>
+            <v-card class="skilltooltip">
+              <span>{{ item.description }}</span>
+            </v-card>
+          </v-tooltip>
+        </div>
+      </v-row>
 
-   <v-divider class="my-5"></v-divider>
+      <!-- <Divider /> -->
+    </section>
+
     <!-- FRONTEND-->
-    <h3 class="mb-5 text-center">Frontend</h3>
-    <v-row justify="center">
-      <div v-for="item in frontend" :key="item.text">
-        <v-tooltip bottom max-width="300" color="transparent">
-          <template v-slot:activator="{ on, attrs }">
-            <div class="skillicon-box" v-bind="attrs" v-on="on">
-              <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
-              <v-img
-                v-else
-                :src="require(`@/assets/devicons/${item.img}.png`)"
-                alt="skill icon"
-                class="skillimage"
-                contain
-              ></v-img>
-              <p>{{ item.text }}</p>
-            </div>
-          </template>
-          <v-card class="skilltooltip">
-            <span>{{ item.description }}</span>
-          </v-card>
-        </v-tooltip>
-      </div>
-    </v-row>
+    <section>
+      <h3>Frontend</h3>
+      <v-row justify="center">
+        <div v-for="item in frontend" :key="item.text">
+          <v-tooltip top max-width="300" color="transparent">
+            <template v-slot:activator="{ on, attrs }">
+              <div class="skillicon-box" v-bind="attrs" v-on="on">
+                <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
+                <v-img
+                  v-else
+                  :src="require(`@/assets/devicons/${item.img}.png`)"
+                  alt="skill icon"
+                  class="skillimage"
+                  contain
+                ></v-img>
+                <p>{{ item.text }}</p>
+              </div>
+            </template>
+            <v-card class="skilltooltip">
+              <span>{{ item.description }}</span>
+            </v-card>
+          </v-tooltip>
+        </div>
+      </v-row>
 
-   <v-divider class="my-5"></v-divider>
+      <!-- <Divider /> -->
+    </section>
+
     <!-- learning-->
-    <h3 class="mb-5 text-center">Learning</h3>
-    <v-row justify="center">
-      <div v-for="item in learning" :key="item.text">
-        <v-tooltip bottom max-width="300" color="transparent">
-          <template v-slot:activator="{ on, attrs }">
-            <div class="skillicon-box" v-bind="attrs" v-on="on">
-              <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
-              <v-img
-                v-else
-                :src="require(`@/assets/devicons/${item.img}.png`)"
-                alt="skill icon"
-                class="skillimage"
-                contain
-              ></v-img>
-              <p>{{ item.text }}</p>
-            </div>
-          </template>
-          <v-card class="skilltooltip">
-            <span>{{ item.description }}</span>
-          </v-card>
-        </v-tooltip>
-      </div>
-    </v-row>
+    <section>
+      <h3>Learning</h3>
+      <v-row justify="center">
+        <div v-for="item in learning" :key="item.text">
+          <v-tooltip top max-width="300" color="transparent">
+            <template v-slot:activator="{ on, attrs }">
+              <div class="skillicon-box" v-bind="attrs" v-on="on">
+                <i v-if="item.icon" :class="item.icon" class="skillicon"></i>
+                <v-img
+                  v-else
+                  :src="require(`@/assets/devicons/${item.img}.png`)"
+                  alt="skill icon"
+                  class="skillimage"
+                  contain
+                ></v-img>
+                <p>{{ item.text }}</p>
+              </div>
+            </template>
+            <v-card class="skilltooltip">
+              <span>{{ item.description }}</span>
+            </v-card>
+          </v-tooltip>
+        </div>
+      </v-row>
+    </section>
   </div>
 </template>
 
 <script>
+// import Divider from "@/components/Divider.vue";
 export default {
   props: [""],
-  components: {},
+  components: { },
   data: () => ({
     basics: [
       {
@@ -246,8 +257,24 @@ export default {
 </script>
 
 <style scoped>
-h3{
-    color: teal;
+h3 {
+  color: teal;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 7px;
+  position: relative;
+  top: -25px;
+  margin-bottom: 5px;
+  background-color: rgb(27, 16, 43);
+}
+
+section{
+ margin: 20px auto;
+ padding: 10px;
+  border-radius: 15px;
+  /* border: 1px solid #6c4a88b4; */
+  background-color: rgba(255, 255, 255, 0.048);
+  max-width: 700px;
 }
 
 .skillicon-box {
@@ -256,6 +283,10 @@ h3{
   justify-content: center;
   align-items: center;
   width: 100px;
+}
+
+.skillicon-box p {
+  color: rgb(174, 149, 190);
 }
 
 .skillicon,
@@ -268,12 +299,16 @@ h3{
 
 .skillicon-box:hover .skillicon,
 .skillicon-box:hover .skillimage {
-  transform: scale(1.05) translateY(-3px);
+  transform: scale(1.2) translateY(-3px);
+}
+.skillicon-box:hover p {
+     color: rgb(255, 255, 255);
+
 }
 
 .skilltooltip {
   background-color: #140729 !important;
   padding: 10px;
-  border: 1px solid rgb(73, 15, 78) !important;
+  border: 1px solid rgba(81, 47, 83, 0.425) !important; 
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-10 slide-in">
+  <div class="pa-10 slide-in-top">
     <h1 class="primary--text text-uppercase">Portfolio</h1>
     <p class="font-italic">-- In progress --</p>
   </div>

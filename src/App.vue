@@ -7,7 +7,7 @@
           <router-view class=""> </router-view>
         </v-container>
 
-        <v-footer app class="mt-14 " padless dark>
+        <v-footer class="mt-14 d-none" padless dark color="black">
           <v-row justify="center">
             © Anzelika Häberli - {{ new Date().getFullYear() }}
           </v-row>

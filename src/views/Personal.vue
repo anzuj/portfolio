@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-10 slide-in">
+  <div class="pa-10 slide-in-top">
     <h1 class="primary--text text-uppercase">Personal</h1>
 
         <v-img

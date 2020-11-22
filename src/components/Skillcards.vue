@@ -1,6 +1,6 @@
 <template>
-<div>
-    <h1 class="mt-10 mb-5 text-center">SKILLS</h1>
+<div style="margin-top: 100px">
+    <h1 class="mb-5 text-center">SKILLS</h1>
 
   <v-row justify="center">
     <v-col class="skill" v-for="skill in skills" :key="skill.title">
@@ -57,18 +57,19 @@ export default {
 }
 
 .icon-container {
-  width: 10rem;
-  height: 10rem;
-  border: 1px solid #6c4a88;
-  background-color: #a8a5a81a;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 15px;
+  /* border: 1px solid #6c4a88; */
+  background-color: rgba(255, 255, 255, 0.048);
   margin-bottom: 3rem;
   display: flex;
   transform: rotate(45deg);
 }
 
 .icon-container i {
-  color: white;
-  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.685);
+  font-size: 4rem;
   margin: auto;
   transform: rotate(-45deg);
 }

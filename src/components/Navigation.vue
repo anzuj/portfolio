@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-app-bar dense app color="black">
+    <v-app-bar dense app color="transparent" flat>
       <v-tabs v-model="tab" background-color="transparent">
         <v-tabs-slider color="teal"></v-tabs-slider>
 

@@ -1,3 +1,7 @@
+html, body{
+  overflow-x: hidden;
+}
+
 #app {
   font-family: Montserrat, sans-serif;
   background: rgb(23, 49, 125);
