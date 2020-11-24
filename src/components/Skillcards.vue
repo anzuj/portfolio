@@ -7,7 +7,7 @@
         <div class="icon-container">
           <v-img
             height="70"
-            class="skill-1"
+            class="skill-1 fade-in"
             :src="require(`@/assets/images/${skill.img}-${theme}.png`)"
             alt="skill icon"
             contain

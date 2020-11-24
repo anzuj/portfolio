@@ -1,7 +1,5 @@
 <template>
-  <div id="particles-bg">
     <div id="particles-js"></div>
-  </div>
 </template>
 
 <script>
@@ -144,15 +142,19 @@ export default {
   -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
   transition: opacity 0.8s ease, transform 1.4s ease;
 }
+
 #particles-js {
   width: 100%;
   height: 100%;
   position: fixed;
   background: rgb(23, 49, 125);
-  background: linear-gradient(142deg, rgb(4, 26, 90) 0%, rgb(25, 4, 37) 100%);
+  background-image: linear-gradient(
+    142deg,
+    rgb(4, 21, 71) 0%,
+    rgb(16, 1, 24) 100%
+  );
   z-index: 1;
   top: 0;
   left: 0;
 }
-
 </style>
