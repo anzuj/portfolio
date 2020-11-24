@@ -1,5 +1,7 @@
 <template>
-  <div id="particles-js"></div>
+  <div id="particles-bg">
+    <div id="particles-js"></div>
+  </div>
 </template>
 
 <script>
@@ -19,10 +21,10 @@ export default {
       particlesJS("particles-js", {
         particles: {
           number: {
-            value: 231,
+            value: 355,
             density: {
               enable: true,
-              value_area: 800,
+              value_area: 789.1476416322727,
             },
           },
           color: {
@@ -44,37 +46,37 @@ export default {
             },
           },
           opacity: {
-            value: 0.5,
+            value: 0.78927153781200905,
             random: true,
             anim: {
-              enable: false,
-              speed: 1,
-              opacity_min: 0.1,
+              enable: true,
+              speed: 0.25,
+              opacity_min: 0,
               sync: false,
             },
           },
           size: {
-            value: 8.008649341288606,
+            value: 2,
             random: true,
             anim: {
-              enable: false,
-              speed: 40,
-              size_min: 0.1,
+              enable: true,
+              speed: 2,
+              size_min: 0,
               sync: false,
             },
           },
           line_linked: {
             enable: false,
-            distance: 0,
+            distance: 150,
             color: "#ffffff",
             opacity: 0.4,
             width: 1,
           },
           move: {
             enable: true,
-            speed: 0.20000000000000004,
-            direction: "top",
-            random: false,
+            speed: 0.2,
+            direction: "none",
+            random: true,
             straight: false,
             out_mode: "out",
             bounce: false,
@@ -85,15 +87,16 @@ export default {
             },
           },
         },
+
         interactivity: {
           detect_on: "canvas",
           events: {
             onhover: {
-              enable: false,
-              mode: "repulse",
+              enable: true,
+              mode: "bubble",
             },
             onclick: {
-              enable: false,
+              enable: true,
               mode: "push",
             },
             resize: true,
@@ -106,10 +109,10 @@ export default {
               },
             },
             bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
+              distance: 83.91608391608392,
+              size: 1,
+              duration: 3,
+              opacity: 1,
               speed: 3,
             },
             repulse: {
@@ -130,3 +133,26 @@ export default {
   },
 };
 </script>
+
+<style>
+#particles-js canvas {
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+}
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgb(23, 49, 125);
+  background: linear-gradient(142deg, rgb(4, 26, 90) 0%, rgb(25, 4, 37) 100%);
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+</style>

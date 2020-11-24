@@ -1,13 +1,25 @@
 <template>
   <nav>
-    <v-app-bar dense app color="transparent" flat>
+    <v-app-bar app :color="navColor" flat v-scroll="onScroll">
       <v-tabs v-model="tab" background-color="transparent">
         <v-tabs-slider color="teal"></v-tabs-slider>
 
-        <v-tab :ripple="false" v-for="item in navItems" :key="item.text" @click="handleNav(item)">
+        <v-tab
+          :ripple="false"
+          v-for="item in navItems"
+          :key="item.text"
+          @click="handleNav(item)"
+        >
           {{ item.text }}
         </v-tab>
       </v-tabs>
+      <v-switch :ripple="false" v-model="$vuetify.theme.dark">
+        <template v-slot:label>
+          <v-icon>{{
+            $vuetify.theme.dark ? "mdi-weather-night" : "mdi-white-balance-sunny"
+          }}</v-icon>
+        </template>
+      </v-switch>
       <v-app-bar-nav-icon class="d-none"></v-app-bar-nav-icon>
     </v-app-bar>
   </nav>
@@ -18,19 +30,20 @@ export default {
   props: [""],
   components: {},
   data: () => ({
+    scrolledDown: false,
     tab: null,
     drawer: false,
     navItems: [
       { text: "HOME", link: "/", icon: "home" },
       { text: "PORTFOLIO", link: "/portfolio", icon: "groups" },
-         { text: "GALLERY", link: "/gallery", icon: "cloud_download" },
+      { text: "GALLERY", link: "/gallery", icon: "cloud_download" },
       { text: "PERSONAL", link: "/personal", icon: "engineering" },
       {
         text: "BLOG",
         link: "https://dev.to/anzelika",
         icon: "corporate_fare",
       },
-   
+
       /*       { text: "nav.jobs", link: "/jobs", icon: "business_center" },
       { text: "nav.contact", link: "/contact", icon: "mail_outline" }, */
     ],
@@ -39,15 +52,29 @@ export default {
     handleNav(nav) {
       if (nav.link === this.$route.path) {
         return;
-      } else if (nav.text === "BLOG"){
-        window.open(nav.link, "_blank"); 
-      }
-      else {
+      } else if (nav.text === "BLOG") {
+        window.open(nav.link, "_blank");
+      } else {
         this.$router.push({ path: nav.link });
       }
     },
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.scrolledDown = top > 80;
+    },
   },
-  computed: {},
+  computed: {
+    navColor() {
+      if (this.scrolledDown && this.$vuetify.theme.dark) {
+        return "#05113E";
+      } else if (this.scrolledDown && !this.$vuetify.theme.dark) {
+        return "#f5f5fd";
+      } else {
+        return "transparent";
+      }
+    },
+  },
 };
 </script>
 

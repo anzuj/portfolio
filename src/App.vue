@@ -1,11 +1,15 @@
 <template>
   <div id="app">
     <v-app>
+      <Particles v-if="$vuetify.theme.dark" />
       <v-main fluid fill-height>
-          <Navigation />
+        <Navigation />
+       
         <v-container>
-          <router-view class=""> </router-view>
+          <router-view> </router-view>
         </v-container>
+
+     
 
         <v-footer class="mt-14 d-none" padless dark color="black">
           <v-row justify="center">
@@ -19,20 +23,20 @@
 
 <script>
 import Navigation from "@/components/Navigation.vue";
+import Particles from "@/components/Particles.vue";
 export default {
   props: [""],
-  components: { Navigation },
+  components: { Navigation, Particles },
   created() {},
   data: () => ({
-    contactInfo: [
-      { icon: "phone", text: "Tel +41 62 889 79 00" },
-      { icon: "mdi-fax", text: "Fax +41 62 889 79 01" },
-      { icon: "mail", text: "info@evatherm.com" },
-    ],
   }),
-  methods: {},
+  methods: {
+ 
+  },
   computed: {},
 };
 </script>
 
-<style></style>
+<style>
+
+</style>

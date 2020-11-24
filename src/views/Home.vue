@@ -20,11 +20,10 @@
           <p class="caption">FRONT END WEB DEVELOPER</p>
 
           <p>
-            Bending the will of pixels for 3 years. Every day in this field is an adventure and it
-            continues to marvel me how a good font and color choice or a few
-            lines of code turn bland into brilliant. I find that just a
-            functional website is not enough - it needs to visually appeal with the content it has been trusted to present.
+            Playing with pixels for 3 years. Difference between bland and beautiful UI is interactivity.
           </p>
+         <!--  Merely a
+            functional website is not enough. It needs to visually appeal with the content it has been trusted to present. On all screen sizes. -->
 
           <div class="d-flex justify-center">
             <div
@@ -33,7 +32,7 @@
               class="mx-1 social-link"
             >
               <a :href="item.link" target="_blank">
-                <v-icon x-large>{{ item.icon }}</v-icon>
+                <v-icon x-large :color="item.color">{{ item.icon }}</v-icon>
               </a>
             </div>
           </div>
@@ -44,7 +43,7 @@
       <!-- class="border-pulse" -->
        <v-row justify="center" v-show="$vuetify.breakpoint.smAndUp">
 
-         <i class="pulse-down fas fa-chevron-down" style="font-size: 45px; color: #523E73"></i>
+         <i class="pulse-down fas fa-chevron-down downArrow" ></i>
          <!-- <v-btn fab icon > <v-icon x-large class="pulse-down" color="secondary">mdi-chevron-down</v-icon></v-btn>      -->
       </v-row>
 
@@ -63,12 +62,12 @@ export default {
   components: { Skillcards, Skillicons },
   data: () => ({
     socialItems: [
-      { link: "https://www.facebook.com/anzelika91", icon: "mdi-facebook" }, 
-      { link: "https://dev.to/anzelika", icon: "mdi-dev-to" },
-      { link: "https://github.com/anzuj", icon: "mdi-github" },
+      { link: "https://www.facebook.com/anzelika91", icon: "mdi-facebook", color:"#A3CEFF" }, 
+      { link: "https://dev.to/anzelika", icon: "mdi-dev-to", color:"#EBF0FE" },
+      { link: "https://github.com/anzuj", icon: "mdi-github", color:"#BDC0C8" },
         {
         link: "https://www.linkedin.com/in/anzelika-haeberli",
-        icon: "mdi-linkedin",
+        icon: "mdi-linkedin", color:"#A3CEFF"
       },
     ],
   }),
@@ -82,6 +81,15 @@ export default {
 #landing{
   min-height: calc(100vh - 150px);
 }
+
+.social-link {
+  transition: 0.15s all;
+}
+
+.social-link:hover {
+  transform: scale(1.08) translateY(-3px);
+}
+
 .social-link a {
   text-decoration: none;
   /* border-radius: 15px; */
@@ -104,4 +112,11 @@ export default {
   user-select: none;
   line-height: 1.1;
 }
+
+.downArrow{
+font-size: 45px; 
+color: #7757ac
+
+}
+
 </style>
