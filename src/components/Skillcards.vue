@@ -62,6 +62,12 @@ export default {
 </script>
 
 <style scoped>
+
+h1{
+   font-family: "Blinker", sans-serif;
+   letter-spacing: 1px;
+   font-size: 3rem;
+}
 h3 {
   /* color: rgb(187, 138, 247); */
   letter-spacing: 0.1rem;
@@ -79,9 +85,8 @@ h3 {
   width: 8rem;
   height: 8rem;
   border-radius: 15px;
-  /* border: 1px solid #6c4a88; */
   background-color: rgba(255, 255, 255, 0.048);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   display: flex;
   transform: rotate(45deg);
 }

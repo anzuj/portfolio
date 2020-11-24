@@ -16,3 +16,9 @@ background-image: url("https://www.transparenttextures.com/patterns/natural-pape
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+.shadow-bg{
+  padding: 25px;
+  border-radius: 50px;
+  background-color: rgba(9, 9, 27, 0.274);
+}
+

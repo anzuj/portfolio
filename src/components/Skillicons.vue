@@ -258,18 +258,21 @@ export default {
 
 <style scoped>
 h3 {
+  font-family: "Blinker", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
   color: teal;
   display: inline-block;
   padding: 5px 15px;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   position: relative;
   top: -25px;
   margin-bottom: 5px;
-  background-color: rgb(27, 16, 43);
+  background-color: rgb(24, 17, 48);
 }
 
 section{
- margin: 20px auto;
+ margin: 30px auto;
  padding: 10px;
   border-radius: 15px;
   /* border: 1px solid #6c4a88b4; */
