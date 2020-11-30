@@ -1,9 +1,10 @@
-html, body{
+html,
+body {
   overflow-x: hidden;
 }
 
-main{
-  z-index: 100
+main {
+  z-index: 100;
   /* to make sure content is above bg */
 }
 
@@ -11,12 +12,12 @@ main{
   font-family: "Open Sans", sans-serif;
   /* font-family: Montserrat, sans-serif; */
   background-color: #f2f3fc;
-background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
-/* background-size: 100px */
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  /* background-size: 100px */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-.shadow-bg{
+.shadow-bg {
   padding: 25px;
   border-radius: 50px;
   background-color: rgba(9, 9, 27, 0.274);

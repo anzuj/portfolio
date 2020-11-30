@@ -20,7 +20,7 @@
 }
 
 .pop {
-  animation: pop 1s;
+  animation: pop 0.7s linear;
 }
 
 .quick-pop {
@@ -75,6 +75,8 @@
   }
 }
 
+
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -116,7 +118,7 @@
   }
 
   50% {
-    transform: scale(1.05);
+    transform: scale(1.2);
   }
 
   100% {

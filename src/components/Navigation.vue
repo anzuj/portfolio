@@ -5,6 +5,7 @@
         <v-tabs-slider color="teal"></v-tabs-slider>
 
         <v-tab
+        class="font-weight-bold"
           :ripple="false"
           v-for="item in navItems"
           :key="item.text"

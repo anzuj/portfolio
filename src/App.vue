@@ -5,7 +5,7 @@
       <v-main fluid fill-height>
         <Navigation />
        
-        <v-container>
+        <v-container style="max-width:1000px">
           <router-view> </router-view>
         </v-container>
 

@@ -13,7 +13,7 @@
         </v-col>
 
         <v-col cols="12" style="max-width:500px">
-          <h1 class="slide-in-right name">
+          <h1 class="slide-in-right name gradient-text">
             Anzelika Häberli
           </h1>
 
@@ -111,9 +111,6 @@ export default {
   font-size: 4rem;
   font-weight: 500;
   font-family: "Kaushan Script", sans-serif;
-  background: linear-gradient(50deg, rgb(99, 250, 242), #3181c2, #9d33bb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding: 1rem;
   user-select: none;
   line-height: 1.1;

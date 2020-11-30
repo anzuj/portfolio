@@ -7,12 +7,11 @@
         <div class="icon-container">
           <v-img
             height="70"
-            class="skill-1 fade-in"
+            class="skill-illustration fade-in"
             :src="require(`@/assets/images/${skill.img}-${theme}.png`)"
             alt="skill icon"
             contain
           ></v-img>
-          <!-- <i :class="skill.icon"></i> -->
         </div>
         <h3>{{ skill.title }}</h3>
         <p>
@@ -62,14 +61,7 @@ export default {
 </script>
 
 <style scoped>
-
-h1{
-   font-family: "Blinker", sans-serif;
-   letter-spacing: 1px;
-   font-size: 3rem;
-}
 h3 {
-  /* color: rgb(187, 138, 247); */
   letter-spacing: 0.1rem;
   margin-bottom: 5px;
 }
@@ -91,14 +83,7 @@ h3 {
   transform: rotate(45deg);
 }
 
-/* .icon-container i {
-  color: rgba(255, 255, 255, 0.685);
-  font-size: 4rem;
-  margin: auto;
-  transform: rotate(-45deg);
-} */
-
-.skill-1 {
+.skill-illustration {
   margin: auto;
   transform: rotate(-45deg);
 }

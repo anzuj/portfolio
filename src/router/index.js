@@ -22,7 +22,20 @@ Vue.use(VueRouter)
   {
     path: '/portfolio',
     name:"portfolio",
-    component: () => import('../views/Portfolio.vue')
+    component: () => import('../views/Portfolio.vue'),
+    children: [
+      {
+        path: 'sapling',
+        name:"sapling",
+        component: () => import('../views/projects/Sapling.vue')
+      },
+      {
+        path: 'czocha',
+        name:"czocha",
+        component: () => import('../views/projects/Czocha.vue')
+      }
+      
+    ]
   },
   {
     path: '/gallery',

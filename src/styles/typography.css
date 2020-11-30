@@ -1,8 +1,19 @@
+
 h1{
-    color: #25888C;
-}
+    color:  rgb(62, 150, 233);
+    font-family: "Blinker", sans-serif;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 600;
+
+ }
 
 .subtext{ 
     color: rgb(139, 139, 139) ;
 }
 
+.gradient-text {
+    background: linear-gradient(50deg, rgb(99, 250, 242), #3181c2, #b453cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
