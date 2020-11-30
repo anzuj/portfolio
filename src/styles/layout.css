@@ -9,12 +9,8 @@ main {
 }
 
 #app {
-  font-family: "Open Sans", sans-serif;
-  /* font-family: Montserrat, sans-serif; */
   background-color: #f2f3fc;
   background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
-  /* background-size: 100px */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .shadow-bg {

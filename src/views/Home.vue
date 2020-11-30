@@ -2,7 +2,7 @@
   <v-container class="slide-in-top text-center">
     <section>
       <v-row id="landing" align="center" justify="center">
-        <v-col cols="12" sm="4" xl="3">
+        <v-col cols="12" sm="4" xl="3" class="pos-relative">
           <v-img
             style="border-radius: 60%"
             class="slide-in-left mx-auto"
@@ -10,6 +10,12 @@
             :src="require(`@/assets/images/profile.jpg`)"
             contain
           />
+   <!--            <v-img
+              height="30"
+            id="star1"
+            :src="require(`@/assets/images/star.png`)"
+            contain
+          /> -->
         </v-col>
 
         <v-col cols="12" style="max-width:500px">
@@ -20,8 +26,8 @@
           <p class="dev-caption">FRONT END WEB DEVELOPER</p>
 
           <p>
-            Playing with pixels for 3 years. Difference between bland and
-            beautiful UI is interactivity.
+           Pixel fairy turning bland into
+            beautiful &#x1F469;&#x1F3FB;&#x200D;&#x1F4BB;
           </p>
           <!--  Merely a
             functional website is not enough. It needs to visually appeal with the content it has been trusted to present. On all screen sizes. -->
@@ -125,4 +131,23 @@ export default {
   font-size: 45px;
   color: #7757ac;
 }
+
+#star1{
+position: absolute;
+bottom: -30px;
+left: -40px;
+animation: twinkle 25s infinite linear;
+}
+
+
+@keyframes twinkle {
+  0% {
+    transform:  rotate(0deg);
+  }
+
+  100% {
+    transform:  rotate(360deg);
+  }
+}
+
 </style>

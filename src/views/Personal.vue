@@ -1,6 +1,6 @@
 <template>
   <div class="pa-10 slide-in-top">
-    <h1 class="primary--text text-uppercase">Personal</h1>
+    <h1>Personal</h1>
 
         <v-img
             class="mb-10"
@@ -10,7 +10,7 @@
           />
     <p>My roots are actually from a tiny, yet proudly tech-savy country of Estonia. It's a land of Skype, TransferWise, e-voting from a cold tub and best rye bread your tastebuds can hope for.
 
-However, as fate had it, I moved to Switzerland to follow my heart in the summer of 2019. I live here now with my partner and our two felines, a perfect stereotypical family of "crazy cat people". A mandatory picture of them both below, as they would loudly protest at being left out. (Don't worry, the cat in the middle picture is in perfect health. The weirdo simply likes to sleep with his eyes open)</p>
+However, as fate had it, I moved to Switzerland to follow my heart in the summer of 2019. I live here now with my husband and our two felines, a perfect stereotypical family of "crazy cat people". A mandatory picture of them both below, as they would loudly protest at being left out. (Don't worry, the cat in the middle picture is in perfect health. The weirdo simply likes to sleep with his eyes open)</p>
 
 <p>Sometimes you can find me in Poland, in a castle of Czocha with a hundred other LARPing enthusiasts. Running around in pointy hats and shouting spells is undoubtedly a great way to escape the routine and inject some magic in your life. You need only ask and I can talk for hours about the mayhem that has taken place in that castle.
 

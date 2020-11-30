@@ -1,8 +1,8 @@
 <template>
-  <div class="pa-10">
+  <div class="pa-10 slide-in-top">
     <!-- thumbnails of projects -->
     <div v-if="$route.name === 'portfolio'">
-      <h1 class="text-uppercase">Portfolio</h1>
+      <h1>Portfolio</h1>
       <p>Check out my coding projects</p>
       <v-row justify="center" justify-sm="start">
         <v-col
@@ -12,10 +12,14 @@
           :key="project.title"
           class="text-center"
         >
-          <v-card link @click="$router.push({ name: project.link })" style="overflow: hidden">
-
+          <v-card
+            :ripple="false"
+            link
+            @click="$router.push({ name: project.link })"
+            style="overflow: hidden"
+          >
             <v-img
-          class="project-img transitioned"
+              class="project-screenshot transitioned"
               :src="require(`@/assets/images/${project.image}.jpg`)"
               contain
             >
@@ -33,10 +37,11 @@
         text
         color="secondary"
         @click="$router.push({ name: 'portfolio' })"
-        class="font-weight-bold"
-        ><v-icon left>mdi-arrow-left-bold</v-icon> back</v-btn
+        ><v-icon left>mdi-arrow-left-bold</v-icon><span style="font-weight: 800">back</span></v-btn
       >
-      <router-view></router-view>
+      <v-fade-transition :hide-on-leave="true">
+        <router-view> </router-view>
+      </v-fade-transition>
     </div>
     <!-- project info page -->
   </div>
@@ -100,9 +105,7 @@ export default {
 </script>
 
 <style>
-
-.project-img:hover{
-  transform: scale(1.10);
+.project-screenshot:hover {
+  transform: scale(1.1);
 }
-
 </style>

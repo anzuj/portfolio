@@ -1,12 +1,21 @@
+#app {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+  }
 
-h1{
+h1:not(.name){
     color:  rgb(62, 150, 233);
     font-family: "Blinker", sans-serif;
+    text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 3rem;
     font-weight: 600;
 
  }
+
+ .v-card__text{
+    font-weight: 300 !important;
+}
 
 .subtext{ 
     color: rgb(139, 139, 139) ;
@@ -17,3 +26,4 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+

@@ -11,7 +11,7 @@
     <v-row>
       <v-col :class="{ 'px-0': $vuetify.breakpoint.xs }">
         <v-card>
-          <h3>&#128209; Project brief</h3>
+          <h3>&#128640; Project brief</h3>
           <v-card-text>
             <slot name="brief"></slot>
           </v-card-text>
@@ -183,8 +183,9 @@ h3 {
   letter-spacing: 1px;
   color: teal;
   padding: 5px 15px;
-  border-radius: 15px 15px 0px 0px !important;
-  background-color: rgba(12, 5, 39, 0.925);
+  text-shadow: 1px 1px 0px black;
+  /* border-radius: 15px 15px 0px 0px !important; */
+  /* background-color: rgba(12, 5, 39, 0.925); */
 }
 .v-card {
   margin-bottom: 20px;
@@ -201,7 +202,7 @@ hr.v-divider {
   display: block;
   margin: 4px auto;
   width: 160px;
-  background: #815fd6 !important;
+  background: #6a4bb9 !important;
 }
 
 a {
