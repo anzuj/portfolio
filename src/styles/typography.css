@@ -3,6 +3,12 @@
     font-weight: 300;
   }
 
+  a{
+      color: rgb(210, 154, 255) !important;
+      font-weight: 600;
+      text-decoration: none;
+  }
+
 h1:not(.name){
     color:  rgb(62, 150, 233);
     font-family: "Blinker", sans-serif;

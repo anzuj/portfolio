@@ -21,6 +21,10 @@
     position: relative !important;
 }
 
+.emoji-block{
+    display: inline-block
+}
+
 .hover-pointer:hover{
 cursor: pointer
 }

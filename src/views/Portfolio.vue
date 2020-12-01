@@ -3,11 +3,12 @@
     <!-- thumbnails of projects -->
     <div v-if="$route.name === 'portfolio'">
       <h1>Portfolio</h1>
-      <p>Check out my coding projects</p>
+      <p>Check out my coding projects below (they're super clickable!)</p>
       <v-row justify="center" justify-sm="start">
         <v-col
           cols="12"
-          md="6"
+          sm="6"
+          lg="4"
           v-for="project in projects"
           :key="project.title"
         >
@@ -48,7 +49,7 @@
 
     <!-- project info page -->
     <div v-else>
-      <v-btn text color="secondary" @click="$router.push({ name: 'portfolio' })"
+      <v-btn outlined text color="secondary" @click="$router.push({ name: 'portfolio' })"
         ><v-icon left>mdi-arrow-left-bold</v-icon
         ><span style="font-weight: 800">back</span></v-btn
       >
@@ -76,10 +77,26 @@ export default {
         link: "czocha",
         image: "czocha",
       },
+        {
+        title: "Fantasy RPG loot generator",
+        link: "loot",
+        image: "discussion",
+      },
       {
-        title: "Survey result discussion tool",
+        title: "Self promotion page",
+        link: "hireme",
+        image: "hireme",
+      },
+      
+      {
+        title: "Discussion mode",
         link: "discussion",
         image: "discussion",
+      },
+        {
+        title: "Signup flow",
+        link: "signup",
+        image: "signup",
       },
     ],
   }),

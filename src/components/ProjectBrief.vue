@@ -1,45 +1,33 @@
 <template>
   <v-container :class="{ 'px-0': $vuetify.breakpoint.xs }">
-    <h2><slot name="title"></slot></h2>
-    <v-img
-    v-if="screenshot"
-    max-width="550"
-      class="project-img fade-in"
-      alt="project screenshot"
-      contain
-      :src="require(`@/assets/images/portfolio/${screenshot}.png`)"
-    ></v-img>
-    <v-row>
-      <v-col :class="{ 'px-0': $vuetify.breakpoint.xs }">
-        <v-card>
-          <h3>&#128640; Project brief</h3>
-          <v-card-text>
-            <slot name="brief"></slot>
-          </v-card-text>
-        </v-card>
-        <v-card>
-          <h3>&#127775; Learning points</h3>
-          <v-card-text>
-            <slot name="learning"></slot>
-          </v-card-text>
-        </v-card>
-      </v-col>
-      <v-col
-        style="max-width: 230px"
-        :class="{ 'px-0': $vuetify.breakpoint.xs }"
-      >
-        <v-card>
+    <v-row align="center">
+      <v-col align="center" class="slide-in-top" style="max-width: 550px">
+        <h2><slot name="title"></slot></h2>
+        <v-img
+          v-if="screenshot"
+          class="project-img"
+          alt="project screenshot"
+          contain
+          :src="require(`@/assets/images/portfolio/${screenshot}.png`)"
+        ></v-img
+      ></v-col>
+
+      <!-- :class="{ 'px-0': $vuetify.breakpoint.xs, 'mx-auto': $vuetify.breakpoint.xs }" -->
+      <v-col class="pb-0">
+        <v-card :outlined="!$vuetify.theme.dark">
           <h3>&#128279; Links</h3>
           <v-card-text class="pt-0">
             <div v-if="code">
               <a :href="code" target="_blank"
-                ><v-btn>See code <v-icon right>mdi-xml</v-icon></v-btn></a
+                ><v-btn class="white--text"
+                  >View code <v-icon right>mdi-xml</v-icon></v-btn
+                ></a
               >
             </div>
 
             <div v-if="live">
               <a :href="live" target="_blank"
-                ><v-btn
+                ><v-btn class="white--text"
                   >Visit site<v-icon right>mdi-open-in-new</v-icon></v-btn
                 ></a
               >
@@ -47,15 +35,18 @@
 
             <div v-if="demo">
               <a :href="demo" target="_blank"
-                ><v-btn
+                ><v-btn class="white--text"
                   >See demo<v-icon right>mdi-eye-outline</v-icon></v-btn
                 ></a
               >
             </div>
+            <div class="text-center" v-if="confidential">
+              Codebase is confidential with the client
+            </div>
           </v-card-text>
         </v-card>
 
-        <v-card>
+        <v-card :outlined="!$vuetify.theme.dark">
           <h3>&#128295; Technologies</h3>
           <v-row class="mt-2" justify="center">
             <div
@@ -77,6 +68,23 @@
         </v-card>
       </v-col>
     </v-row>
+
+    <v-row no-gutters>
+      <v-col>
+        <v-card :outlined="!$vuetify.theme.dark">
+          <h3>&#128640; Project brief</h3>
+          <v-card-text>
+            <slot name="brief"></slot>
+          </v-card-text>
+        </v-card>
+        <v-card :outlined="!$vuetify.theme.dark">
+          <h3>&#127775; Learning points</h3>
+          <v-card-text>
+            <slot name="learning"></slot>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -88,6 +96,7 @@ export default {
     live: String,
     code: String,
     demo: String,
+    confidential: Boolean,
   },
   components: {},
   data: () => ({
@@ -140,6 +149,11 @@ export default {
       },
       {
         icon: null,
+        img: "i18n",
+        text: "i18n",
+      },
+      {
+        icon: null,
         img: "jest",
         text: "Unit testing",
       },
@@ -183,14 +197,12 @@ h3 {
   letter-spacing: 1px;
   color: rgb(12, 161, 161);
   padding: 5px 15px;
-  text-shadow: 1px 1px 0px black;
-  /* border-radius: 15px 15px 0px 0px !important; */
-  /* background-color: rgba(12, 5, 39, 0.925); */
 }
 .v-card {
   margin-bottom: 20px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.062);
+  box-shadow: none !important;
   /* border: 0.5px solid rgba(126, 158, 226, 0.068); */
 }
 
@@ -222,17 +234,18 @@ a {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 80px;
+  width: 75px;
 }
 
 .skillicon-box p {
+  font-size: 0.8rem;
   color: rgb(174, 149, 190);
 }
 
 .skillicon,
 .skillimage {
-  width: 32px;
-  height: 32px;
-  font-size: 32px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
 }
 </style>

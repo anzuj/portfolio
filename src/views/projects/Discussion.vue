@@ -1,9 +1,17 @@
 <template>
   <div>
-    <ProjectBrief :screenshot="'discussion'" :demo="'https://discussion-demo.herokuapp.com/'" :tech="['VueJS', 'Vuetify', 'CSS','Webpack', 'REST API', 'Javascript']">
+    <ProjectBrief
+      :screenshot="'discussion'"
+      :demo="'https://discussion-demo.herokuapp.com/'"
+      :tech="['VueJS', 'Vuetify', 'CSS', 'Webpack', 'REST API', 'i18n','Javascript']" :confidential="true"
+    >
       <template v-slot:title>
         Survey results discussion mode
-          <span class="slide-in-left">&#128172;</span>
+        <span class="emoji-block slide-in-right-small"
+          >&#128587;&#127995;<small style="position: relative; top: -10px; left: -4px"
+            >&#128172;</small
+          ></span
+        >
       </template>
 
       <template v-slot:brief>
@@ -11,7 +19,7 @@
       </template>
 
       <template v-slot:learning>
-       Render dynamic data via API
+        Render dynamic data via API
       </template>
     </ProjectBrief>
   </div>
@@ -30,20 +38,4 @@ export default {
 
 <style>
 
-
-@keyframes slideLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-7px) scaleY(1);
-  }
-
-    50% {
-    transform: scaleY(1.3);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0px) scaleY(1);
-  }
-}
 </style>

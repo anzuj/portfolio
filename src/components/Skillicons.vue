@@ -151,6 +151,13 @@ export default {
             description:
               "Building applications hand in hand with API requests.",
           },
+             {
+            icon: null,
+            img: "i18n",
+            text: "i18n",
+            description:
+              "Solid understanding of building multilingual content. For example using Vue plugin i18n, moment.js or just optimising Javascript date object to showcase most relevant content to the user depending on their language preferences/locale.",
+          },
           {
             icon: null,
             img: "jest",

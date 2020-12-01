@@ -38,6 +38,21 @@ Vue.use(VueRouter)
         path: 'discussion',
         name:"discussion",
         component: () => import('../views/projects/Discussion.vue')
+      },
+      {
+        path: 'loot',
+        name:"loot",
+        component: () => import('../views/projects/LootGenerator.vue')
+      },
+      {
+        path: 'signup',
+        name:"signup",
+        component: () => import('../views/projects/Signup.vue')
+      },
+      {
+        path: 'hireme',
+        name:"hireme",
+        component: () => import('../views/projects/Hireme.vue')
       }
       
     ]

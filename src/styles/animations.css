@@ -11,6 +11,10 @@
   animation: moveInRight 0.7s ease-in;
 }
 
+.slide-in-right-small {
+  animation: moveInRightSmall 0.5s linear;
+}
+
 .fade-in {
   animation: fadeIn 0.3s ease-in;
 }
@@ -85,9 +89,23 @@
 
   100% {
     opacity: 1;
-    transform: translate(0);
+    transform: translateX(0);
   }
 }
+
+
+@keyframes moveInRightSmall {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 
 
