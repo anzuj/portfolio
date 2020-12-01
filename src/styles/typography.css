@@ -1,35 +1,49 @@
 #app {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-  }
-
-  a{
-      color: rgb(210, 154, 255) !important;
-      font-weight: 600;
-      text-decoration: none;
-  }
-
-h1:not(.name){
-    color:  rgb(62, 150, 233);
-    font-family: "Blinker", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 3rem;
-    font-weight: 600;
-
- }
-
- .v-card__text{
-    font-weight: 300 !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
-.subtext{ 
-    color: rgb(139, 139, 139) ;
+h2,
+h3 {
+  font-family: "Blinker", sans-serif;
+}
+a {
+  color: rgb(210, 154, 255) !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.gradient-h1 {
+  background: linear-gradient(50deg, rgb(99, 250, 242), #3181c2, #b453cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 20px;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Kaushan Script", sans-serif;
+  line-height: 1.1;
+}
+
+.v-card__text {
+  font-weight: 300 !important;
+}
+
+.subtext {
+  color: rgb(139, 139, 139);
 }
 
 .gradient-text {
-    background: linear-gradient(50deg, rgb(99, 250, 242), #3181c2, #b453cf);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(50deg, rgb(99, 250, 242), #3181c2, #b453cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-

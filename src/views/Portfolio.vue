@@ -2,7 +2,7 @@
   <div class="pa-10 slide-in-top">
     <!-- thumbnails of projects -->
     <div v-if="$route.name === 'portfolio'">
-      <h1>Portfolio</h1>
+      <h1 class="gradient-h1">Portfolio</h1>
       <p>Check out my coding projects below (they're super clickable!)</p>
       <v-row justify="center" justify-sm="start">
         <v-col
@@ -32,15 +32,14 @@
             >
             </v-img>
           </v-card> -->
-          
+
             <v-img
-              height="220"
               class="transitioned"
               :src="require(`@/assets/images/portfolio/${project.image}.png`)"
               contain
             >
             </v-img>
-            <h3>{{ project.title }}</h3>
+            <h3 class="mt-0 text-center">{{ project.title }}</h3>
           </div>
         </v-col>
       </v-row>
@@ -49,7 +48,11 @@
 
     <!-- project info page -->
     <div v-else>
-      <v-btn outlined text color="secondary" @click="$router.push({ name: 'portfolio' })"
+      <v-btn
+        outlined
+        text
+        color="secondary"
+        @click="$router.push({ name: 'portfolio' })"
         ><v-icon left>mdi-arrow-left-bold</v-icon
         ><span style="font-weight: 800">back</span></v-btn
       >
@@ -77,7 +80,7 @@ export default {
         link: "czocha",
         image: "czocha",
       },
-        {
+      {
         title: "Fantasy RPG loot generator",
         link: "loot",
         image: "discussion",
@@ -87,13 +90,13 @@ export default {
         link: "hireme",
         image: "hireme",
       },
-      
+
       {
-        title: "Discussion mode",
+        title: "Feedback manager",
         link: "discussion",
         image: "discussion",
       },
-        {
+      {
         title: "Signup flow",
         link: "signup",
         image: "signup",
@@ -106,11 +109,6 @@ export default {
 </script>
 
 <style>
-.project-screenshot {
-  text-align: center;
-}
-
-
 .project-screenshot:hover {
   cursor: pointer;
 }
@@ -118,7 +116,4 @@ export default {
 .project-screenshot:hover .v-image {
   transform: scale(1.05);
 }
-
-
-
 </style>

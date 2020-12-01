@@ -1,6 +1,9 @@
 <template>
   <div class="pa-10 slide-in-top">
-    <h1>Personal</h1>
+    <!-- <h1>Personal</h1> -->
+       <h1 class="gradient-h1">
+          Personal
+          </h1>
 
         <v-img
             class="mb-10"

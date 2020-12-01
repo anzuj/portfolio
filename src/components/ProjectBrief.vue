@@ -40,7 +40,7 @@
                 ></a
               >
             </div>
-            <div class="text-center" v-if="confidential">
+            <div class="text-center" style="font-size: 11px" v-if="confidential">
               Codebase is confidential with the client
             </div>
           </v-card-text>
@@ -192,11 +192,8 @@ export default {
   margin-top: 8px;
 }
 h3 {
-  font-family: "Blinker", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: rgb(12, 161, 161);
   padding: 5px 15px;
+  color: rgb(12, 161, 161);
 }
 .v-card {
   margin-bottom: 20px;

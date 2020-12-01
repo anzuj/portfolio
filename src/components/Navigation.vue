@@ -11,7 +11,7 @@
           :key="item.text"
           @click="handleNav(item)"
         >
-          {{ item.text }}
+          {{ item.text }} <v-icon small class="ml-1" v-if="item.icon">{{item.icon}}</v-icon>
         </v-tab>
       </v-tabs>
       <v-switch :ripple="false" v-model="$vuetify.theme.dark">
@@ -35,14 +35,14 @@ export default {
     tab: null,
     drawer: false,
     navItems: [
-      { text: "HOME", link: "/", icon: "home" },
-      { text: "PORTFOLIO", link: "/portfolio", icon: "groups" },
-      { text: "GALLERY", link: "/gallery", icon: "cloud_download" },
-      { text: "PERSONAL", link: "/personal", icon: "engineering" },
+      { text: "HOME", link: "/", icon: null },
+      { text: "PORTFOLIO", link: "/portfolio", icon: null },
+      { text: "GALLERY", link: "/gallery", icon: null },
+      { text: "PERSONAL", link: "/personal", icon: null },
       {
         text: "BLOG",
         link: "https://dev.to/anzelika",
-        icon: "corporate_fare",
+        icon: "mdi-open-in-new",
       },
 
       /*       { text: "nav.jobs", link: "/jobs", icon: "business_center" },

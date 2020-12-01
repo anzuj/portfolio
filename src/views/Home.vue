@@ -19,7 +19,7 @@
         </v-col>
 
         <v-col cols="12" style="max-width:500px">
-          <h1 class="slide-in-right name gradient-text">
+          <h1 class="slide-in-right gradient-h1">
             Anzelika Häberli
           </h1>
 
@@ -113,14 +113,7 @@ export default {
   /* box-shadow: 2px 5px 16px 0px #296dbb, 5px -4px 15px 5px rgba(0,0,0,0); */
 }
 
-.name {
-  font-size: 4rem;
-  font-weight: 500;
-  font-family: "Kaushan Script", sans-serif;
-  padding: 1rem;
-  user-select: none;
-  line-height: 1.1;
-}
+
 
 .dev-caption{
   letter-spacing: 2px;

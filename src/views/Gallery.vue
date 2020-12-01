@@ -1,6 +1,9 @@
 <template>
   <div class="pa-10 slide-in-top">
-    <h1>Gallery</h1>
+    <!-- <h1>Gallery</h1> -->
+    <h1 class="gradient-h1">
+           Gallery
+          </h1>
     <p class="font-italic">-- In progress --</p>
   </div>
 </template>

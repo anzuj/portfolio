@@ -216,10 +216,7 @@ section.transparent-card {
 }
 
 .transparent-card h3 {
-  font-family: "Blinker", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: teal;
+  color: rgb(12, 161, 161);
   padding: 5px 15px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
