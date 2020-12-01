@@ -3,10 +3,11 @@
     <h2><slot name="title"></slot></h2>
     <v-img
     v-if="screenshot"
+    max-width="550"
       class="project-img fade-in"
       alt="project screenshot"
       contain
-      :src="require(`@/assets/images/${screenshot}.jpg`)"
+      :src="require(`@/assets/images/portfolio/${screenshot}.png`)"
     ></v-img>
     <v-row>
       <v-col :class="{ 'px-0': $vuetify.breakpoint.xs }">
@@ -29,7 +30,7 @@
       >
         <v-card>
           <h3>&#128279; Links</h3>
-          <v-card-text>
+          <v-card-text class="pt-0">
             <div v-if="code">
               <a :href="code" target="_blank"
                 ><v-btn>See code <v-icon right>mdi-xml</v-icon></v-btn></a
@@ -175,13 +176,12 @@ export default {
 <style scoped>
 .project-img {
   margin-top: 8px;
-  border-radius: 15px;
 }
 h3 {
   font-family: "Blinker", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  color: teal;
+  color: rgb(12, 161, 161);
   padding: 5px 15px;
   text-shadow: 1px 1px 0px black;
   /* border-radius: 15px 15px 0px 0px !important; */

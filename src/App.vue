@@ -39,11 +39,11 @@ export default {
     setShootingStar() {
       setInterval(() => {
         this.shoot = true;
-      }, 6000);
+      }, 10000);
 
       setInterval(() => {
         this.shoot = false;
-      }, 8000);
+      }, 12000);
     },
   },
   computed: {},

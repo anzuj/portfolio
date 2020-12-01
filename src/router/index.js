@@ -33,6 +33,11 @@ Vue.use(VueRouter)
         path: 'czocha',
         name:"czocha",
         component: () => import('../views/projects/Czocha.vue')
+      },
+      {
+        path: 'discussion',
+        name:"discussion",
+        component: () => import('../views/projects/Discussion.vue')
       }
       
     ]
