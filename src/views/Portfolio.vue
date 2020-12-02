@@ -109,6 +109,7 @@ export default {
 </script>
 
 <style>
+
 .project-screenshot:hover {
   cursor: pointer;
 }
@@ -116,4 +117,7 @@ export default {
 .project-screenshot:hover .v-image {
   transform: scale(1.05);
 }
+
+
+
 </style>
