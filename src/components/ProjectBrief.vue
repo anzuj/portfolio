@@ -211,7 +211,7 @@ hr.v-divider {
   display: block;
   margin: 4px auto;
   width: 160px;
-  background: #6a4bb9 !important;
+  background: #7B7FC1 !important;
 }
 
 a {

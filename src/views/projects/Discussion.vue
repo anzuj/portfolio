@@ -85,7 +85,7 @@
             Cute login screen. Practiced my asyncronous skills and sequencing by
             making a more personalised login UX for our project.
           </li>
-          <img style="width: 600px" src="@/assets/images/login.gif">
+          <img class="mt-2" style="max-width: 500px" src="@/assets/images/login.gif">
         </ul>
       </template>
     </ProjectBrief>

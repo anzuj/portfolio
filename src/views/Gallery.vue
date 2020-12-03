@@ -15,7 +15,7 @@
             class="transitioned"
             alt="gallery picture"
             aspect-ratio="1.2"
-            :src="require(`@/assets/images/gallery/${img}.jpg`)"
+            :src="getImgPath(img)"
           ></v-img>
         </div>
       </v-col>
@@ -49,7 +49,7 @@
               height="70vh"
               alt="gallery picture"
               contain
-              :src="require(`@/assets/images/gallery/${currentImage}.jpg`)"
+              :src="getImgPath(currentImage)"
             ></v-img>
           </div>
         </v-container>
@@ -58,10 +58,12 @@
   </div>
 </template>
 
+src\views\Gallery.vue
+
 <script>
 export default {
   mounted() {
-    //This creates a helper array to render images. If nr of images changes, just modify nrOfImages accordingly and everything else is automatic.
+    //Creating a helper array to render images. If nr of images changes, just modify nrOfImages accordingly and everything else is automatic.
     this.images = [...Array(this.nrOfImages + 1).keys()].slice(1);
   },
   data: () => ({
@@ -94,18 +96,20 @@ export default {
         this.currentImage += 1;
       }
     },
+    getImgPath(img) {   
+    return require(`@/assets/images/gallery/${img}.jpg`)
+}
   },
-  computed: {},
 };
 </script>
 
 <style>
 .gallery-image:hover {
-  cursor: pointer;
+  cursor: zoom-in;
 }
 
 .gallery-image:hover .v-image {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .imageIndicator {

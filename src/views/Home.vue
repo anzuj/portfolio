@@ -6,11 +6,11 @@
           <v-img
             style="border-radius: 60%"
             class="slide-in-left mx-auto"
-            max-width="300"
+            :max-width="$vuetify.breakpoint.xs ? 170 : 300"
             :src="require(`@/assets/images/profile.jpg`)"
             contain
           />
-   <!--            <v-img
+          <!--            <v-img
               height="30"
             id="star1"
             :src="require(`@/assets/images/star.png`)"
@@ -18,16 +18,18 @@
           /> -->
         </v-col>
 
-        <v-col cols="12" style="max-width:500px">
-          <h1 class="slide-in-right gradient-h1">
-            Anzelika Häberli
-          </h1>
+        <v-col
+          cols="12"
+          style="max-width:500px"
+          :class="{ 'my-0': $vuetify.breakpoint.xs }"
+        >
+          <h1 class="slide-in-right gradient-h1">Anzelika<br />Häberli</h1>
 
           <p class="dev-caption">FRONT END WEB DEVELOPER</p>
 
           <p>
-           Pixel fairy turning bland into
-            beautiful &#x1F469;&#x1F3FB;&#x200D;&#x1F4BB;
+            Pixel fairy turning bland into beautiful
+            &#x1F469;&#x1F3FB;&#x200D;&#x1F4BB;
           </p>
           <!--  Merely a
             functional website is not enough. It needs to visually appeal with the content it has been trusted to present. On all screen sizes. -->
@@ -113,9 +115,7 @@ export default {
   /* box-shadow: 2px 5px 16px 0px #296dbb, 5px -4px 15px 5px rgba(0,0,0,0); */
 }
 
-
-
-.dev-caption{
+.dev-caption {
   letter-spacing: 2px;
   font-size: 0.8rem;
 }
@@ -125,22 +125,20 @@ export default {
   color: #7757ac;
 }
 
-#star1{
-position: absolute;
-bottom: -30px;
-left: -40px;
-animation: twinkle 25s infinite linear;
+#star1 {
+  position: absolute;
+  bottom: -30px;
+  left: -40px;
+  animation: twinkle 25s infinite linear;
 }
-
 
 @keyframes twinkle {
   0% {
-    transform:  rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-    transform:  rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 </style>

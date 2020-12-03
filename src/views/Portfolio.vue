@@ -3,7 +3,7 @@
     <!-- thumbnails of projects -->
     <div v-if="$route.name === 'portfolio'">
       <h1 class="gradient-h1">Portfolio</h1>
-      <p>Check out my coding projects below (they're super clickable!)</p>
+      <p>Coding projects I've done over the years</p>
       <v-row justify="center" justify-sm="start">
         <v-col
           cols="12"
@@ -51,7 +51,7 @@
       <v-btn
         outlined
         text
-        color="secondary"
+        color="#7B7FC1"
         @click="$router.push({ name: 'portfolio' })"
         ><v-icon left>mdi-arrow-left-bold</v-icon
         ><span style="font-weight: 800">back</span></v-btn

@@ -2,6 +2,7 @@
   <div id="app">
     <v-app>
       <Particles v-if="$vuetify.theme.dark" />
+
       <v-main fluid fill-height>
         <Navigation />
         <div id="shootingStar" :class="{ 'shoot-star': shoot }"></div>

@@ -4,7 +4,7 @@
 }
 
 h2,
-h3 {
+h3, .drawerLink {
   font-family: "Blinker", sans-serif;
 }
 a {
@@ -33,6 +33,14 @@ h2 {
   font-family: "Kaushan Script", sans-serif;
   line-height: 1.1;
 }
+
+@media only screen and (max-width: 600px) {
+  .gradient-h1 {
+    font-size: 3rem;
+    padding-top:0px;
+  }
+}
+
 
 .v-card__text {
   font-weight: 300 !important;
