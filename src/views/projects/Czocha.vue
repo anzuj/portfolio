@@ -2,7 +2,7 @@
   <div>
     <ProjectBrief
       :screenshot="'czocha'"
-      :live="'https://czochahelper.site'"
+      :live="'https://anzuj.github.io/czocha'"
       :code="'https://github.com/anzuj/czocha'"
       :tech="['Bootstrap', 'jQuery', 'CSS']"
     >

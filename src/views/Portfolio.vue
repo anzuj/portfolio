@@ -83,7 +83,7 @@ export default {
       {
         title: "Fantasy RPG loot generator",
         link: "loot",
-        image: "discussion",
+        image: "loot",
       },
       {
         title: "Self promotion page",

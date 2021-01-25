@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProjectBrief :screenshot="'hireme'" :live="'https://anzudev.com/hireme'" :code="'https://github.com/anzuj/hireme'" :tech="['VueJS', 'Vuetify', 'CSS','Webpack', 'Javascript']">
+    <ProjectBrief :screenshot="'hireme'" :live="'https://anzuj.github.io/hireme/'" :code="'https://github.com/anzuj/hireme'" :tech="['VueJS', 'Vuetify', 'CSS','Webpack', 'Javascript']">
       <template v-slot:title>
        Self promotion page
           <span class="emoji-block slide-in-right-small">&#x1F469;&#x1F3FB;&#x200D;&#x1F4BB;</span>

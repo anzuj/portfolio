@@ -1,17 +1,17 @@
 <template>
   <div>
-    <ProjectBrief :screenshot="'discussion'" :demo="'https://discussion-demo.herokuapp.com/'" :tech="['VueJS', 'Vuetify', 'CSS','Webpack', 'Javascript']">
+    <ProjectBrief :screenshot="'loot'" :live="'https://anzuj.github.io/monstergame'" :code="'https://github.com/anzuj/monstergame'" :tech="['VueJS', 'Vuetify', 'CSS','Webpack', 'Javascript', 'Procreate']">
       <template v-slot:title>
        Fantasy RPG loot generator
           <span class="emoji-block slide-in-right-small">&#127993;</span>
       </template>
 
       <template v-slot:brief>
-        Passion project to practice JS and illustrations
+        A Passion project of mine to practice dynamic styling, JS and illustrations.
       </template>
 
       <template v-slot:learning>
-       JS randomising
+       Got good practice with JS array methods, randomising and how to make conditional styling work. Original inspiration came from a very simplistic game made during Maximilian Schwarzmüller's <a href="https://www.udemy.com/course/vuejs-2-the-complete-guide/" target="_blank" rel="noopener noreferrer">Vue course</a> and I started adding more layers of complexity to it.
       </template>
     </ProjectBrief>
   </div>

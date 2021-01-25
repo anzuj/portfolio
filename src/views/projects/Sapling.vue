@@ -2,7 +2,7 @@
   <div>
     <ProjectBrief
       :screenshot="'kuusetaimed'"
-      :demo="'https://anzudev.com/kuusetaimed'"
+      :demo="'https://anzuj.github.io/kuusetaimed'"
       :code="'https://github.com/anzuj/kuusetaimed'"
       :tech="['Bootstrap', 'jQuery', 'CSS']"
     >
@@ -23,12 +23,12 @@
         boggled my mind that he charged 800 EUR to put together a site which
         hurts your eyes with the color scheme and has not thought about mobile
         responsiveness at all.
- <!--        <v-img
+        <v-img
           class="mx-auto my-2 fade-in"
-          max-width="600"
+          max-width="300"
           contain
-          src="@/assets/images/kuusetaimed-old.jpg"
-        ></v-img> -->
+          :src="require('@/assets/images/kuusetaimed-old.jpg')"
+        ></v-img>
         So I decided to give this family business a bit of a more deserving
         web-home pro bono, especially considering that growing trees is a very
         worthwhile cause.
