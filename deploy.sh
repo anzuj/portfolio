@@ -14,7 +14,7 @@ cd dist
 
 git init
 git add -A
-git commit -m 'update gh-pages'
+git commit -m 'deploy'
 
 
 # push to branch gh-pages
