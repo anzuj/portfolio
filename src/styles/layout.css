@@ -9,7 +9,12 @@ main {
 }
 
 #app {
-  background-color: #19216b;
+  background: rgb(23, 49, 125);
+  background-image: linear-gradient(
+    142deg,
+    rgb(4, 21, 71) 0%,
+    rgb(16, 1, 24) 100%
+  );
 }
 
 .shadow-bg {
