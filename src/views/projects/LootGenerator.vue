@@ -2,12 +2,12 @@
   <div>
     <ProjectBrief :screenshot="'loot'" :live="'https://anzuj.github.io/monstergame'" :code="'https://github.com/anzuj/monstergame'" :tech="['VueJS', 'Vuetify', 'CSS','Webpack', 'Javascript', 'Procreate']">
       <template v-slot:title>
-       Fantasy RPG loot generator
+       Little monster game
           <span class="emoji-block slide-in-right-small">&#127993;</span>
       </template>
 
       <template v-slot:brief>
-        A Passion project of mine to practice dynamic styling, JS and illustrations.
+        A Passion project of mine to practice dynamic styling, Javascript and illustrations. It's a basic game of you versus a big ugly spider coupled with a randomly generated (and often humorous) loot.
       </template>
 
       <template v-slot:learning>
