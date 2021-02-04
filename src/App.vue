@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-app>
-      <Particles v-if="$vuetify.theme.dark" />
+      <Particles/>
 
       <v-main fluid fill-height>
         <Navigation />
