@@ -17,7 +17,7 @@
           @click="handleNav(item)"
           active-class="active-nav"
         >
-        <span class="px-1"> {{ item.text }}</span> 
+          <span class="px-1"> {{ item.text }}</span>
           <v-icon small class="ml-1" v-if="item.icon">{{ item.icon }}</v-icon>
         </v-tab>
       </v-tabs>
@@ -93,24 +93,26 @@ export default {
     navItems: [
       { text: "HOME", link: "/", icon: null },
       { text: "PORTFOLIO", link: "/portfolio", icon: null },
-      //  { text: "CV", link: "/cv", icon: null },
+      {
+        text: "CV",
+        link: "https://www.anzudev.com/cv.pdf",
+        icon: null,
+      },
       { text: "GALLERY", link: "/gallery", icon: null },
       { text: "PERSONAL", link: "/personal", icon: null },
+
       {
         text: "BLOG",
         link: "https://dev.to/anzelika",
-        icon: "mdi-open-in-new",
+        icon: null,
       },
-
-      /*       { text: "nav.jobs", link: "/jobs", icon: "business_center" },
-      { text: "nav.contact", link: "/contact", icon: "mail_outline" }, */
     ],
   }),
   methods: {
     handleNav(nav) {
       if (nav.link === this.$route.path) {
         return;
-      } else if (nav.text === "BLOG") {
+      } else if (nav.text === "BLOG" || nav.text === "CV") {
         window.open(nav.link, "_blank");
       } else {
         this.$router.push({ path: nav.link });
