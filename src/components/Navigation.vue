@@ -93,6 +93,7 @@ export default {
     navItems: [
       { text: "HOME", link: "/", icon: null },
       { text: "PORTFOLIO", link: "/portfolio", icon: null },
+      //  { text: "CV", link: "/cv", icon: null },
       { text: "GALLERY", link: "/gallery", icon: null },
       { text: "PERSONAL", link: "/personal", icon: null },
       {

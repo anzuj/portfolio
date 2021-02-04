@@ -1,4 +1,4 @@
-# Basic VUE template
+# Personal portfolio
 
 * Vuex
 * Vuetify
