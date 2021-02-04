@@ -35,9 +35,8 @@ In 2019 I followed my heart to Switzerland. I live here now with my husband and 
   <li>I named one of our cats Leeroy Jenkins as a tribute to my World of Warcraft raiding days.</li>
   <li>Harry Potter and Witcher franchises have my heart.</li>
   <li>I'm at my happiest when I'm elbow deep in some DIY project or a good book.</li>
-  <li>Nerdy side in my adores boardgames. Current favourite is Everdell. I could sit up for hours crafting tiny components and painting miniatures.</li>
+  <li>Nerdy side in me adores boardgames. Current favourite is Everdell. I could sit up for hours crafting tiny components and painting miniatures.</li>
   </ul>
-
 
 
 
