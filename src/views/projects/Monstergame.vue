@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProjectBrief :screenshot="'loot'" :live="'https://anzuj.github.io/monstergame'" :code="'https://github.com/anzuj/monstergame'" :tech="['VueJS', 'Vuetify', 'CSS','Webpack', 'Javascript', 'Procreate']">
+    <ProjectBrief :screenshot="'monster'" :live="'https://anzuj.github.io/monstergame'" :code="'https://github.com/anzuj/monstergame'" :tech="['VueJS', 'Vuetify', 'CSS','Webpack', 'Javascript', 'Procreate']">
       <template v-slot:title>
        Little monster game
           <span class="emoji-block slide-in-right-small">&#127993;</span>

@@ -81,9 +81,9 @@ export default {
         image: "czocha",
       },
       {
-        title: "Fantasy RPG loot generator",
-        link: "loot",
-        image: "loot",
+        title: "Little monster game",
+        link: "monster",
+        image: "monster",
       },
       {
         title: "Self promotion page",

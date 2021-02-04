@@ -40,9 +40,9 @@ Vue.use(VueRouter)
         component: () => import('../views/projects/Discussion.vue')
       },
       {
-        path: 'loot',
-        name:"loot",
-        component: () => import('../views/projects/LootGenerator.vue')
+        path: 'monster',
+        name:"monster",
+        component: () => import('../views/projects/Monstergame.vue')
       },
       {
         path: 'signup',
@@ -62,11 +62,6 @@ Vue.use(VueRouter)
     name:"gallery",
     component: () => import('../views/Gallery.vue')
   },
-  {
-    path: '/cv',
-    name:"cv",
-    component: () => import('../views/Cv.vue')
-  }
 ]
 
 const router = new VueRouter({
