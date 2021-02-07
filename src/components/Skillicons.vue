@@ -197,6 +197,13 @@ export default {
             description:
               "In the middle of an online ReactJS bootcamp. I've built basic to-do apps to get the grasp on React state management and how it differs from Vue",
           },
+            {
+            img: "ts",
+            icon: null,
+            text: "TypeScript",
+            description:
+              "Learning TypeScript via Maximilian Schwarzmüller's Udemy course to powercharge my applications in the future",
+          },
         ],
       },
     ],
