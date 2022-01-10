@@ -27,7 +27,7 @@
           class="mx-auto my-2 fade-in"
           max-width="300"
           contain
-          :src="require('@/assets/images/kuusetaimed-old.JPG')"
+          :src="require('@/assets/images/kuusetaimed-old.jpg')"
         ></v-img>
         So I decided to give this family business a bit of a more deserving
         web-home pro bono, especially considering that growing trees is a very
