@@ -2,20 +2,20 @@
   <div>
     <ProjectBrief
       :screenshot="'discussion'"
-      :demo="'https://discussion-demo.herokuapp.com/'"
+      :demo="'https://youtu.be/Egp9y5RcQjM'"
       :tech="[
         'VueJS',
         'Vuetify',
         'CSS',
         'Webpack',
         'REST API',
+        'TypeScript',
         'i18n',
         'Javascript',
       ]"
-      :confidential="true"
     >
       <template v-slot:title>
-        Feedback manager
+        Teambarometer
         <span class="emoji-block slide-in-right-small"
           >&#128587;&#127995;<small
             style="position: relative; top: -10px; left: -4px"
@@ -26,38 +26,31 @@
 
       <template v-slot:brief>
         <h4>Goal</h4>
-        Build an interactive feedback presentation tool and manager for team
-        leads.
+        Build an interactive employee survey tool to aid companies with their culture change.
         <h4>Summary</h4>
         <p>
-          This project was my first "hands-on" experience to develop something
-          in a team, during my internship at Joineer AG (Swiss startup for
-          employee surveys). Developing this from scratch was an amazing
-          learning experience where my role as a front end developer was in
-          beautiful synergy with the rest of the team. Inspired by my learnings,
-          I wrote a post on dev.to:
+         I started working on this project during my internship at Joineer AG about which you can read more in my dev.to post here:
           <a
             href="https://dev.to/anzelika/8-things-i-learned-during-my-internship-59ma"
             target="_blank"
             >"8 things I learned as an intern"</a
-          >.
+          >. After my internship I stayed at Joineer AG and maintained the app for 3 years, eventually as a front end lead. I implemented new features ground-up from wireframes, conducted user testing and migrated pages over from legacy codebase with new APIs.
         </p></template
       >
 
       <template v-slot:learning>
         <ul>
           <li>
-            Getting comfortable developing with a JS framework. This porfolio
-            site is built with vanilla JS/CSS and everything written on one HTML
-            page. It's been incredibly eye opening to spend a few months with
-            components, props and 2-way data binding to build more complex
-            project.
+            VueJS. During this project I got a lot of experience with it, especially from the reusability part. I implemented class-based syntax on larger components allowing to add a layer of TypeScript and a more logical grouping of methods/variables.
           </li>
           <li>
-            Refining workflow within the team. We set up a Kanban board and 2
-            week sprints for realistic development goals working towards the
-            release date. It gave structure to my work and allowed to discuss in
-            advance what parts of the project need co-operating.
+            TypeScript. While maintaining the codebase I started learning TypeScript. I implemented it gradually to the app as well, typecasting most common objects that are rendered in the interface, making the code more self-explanatory.
+          </li>
+          <li>
+          Legacy code maintenance. One of the trickiest parts of maintaining this app was the fact that there were in fact 2 apps which had to be in sync with each other with the logged in user. This brought along its caveats for routing and refreshing cache to make it look seamless in the GUI even though in the background the browser switches between 2 webapps.
+          </li>
+          <li>
+     Agile workflow. In our small development team we worked in 2-week sprints to make sure our time is spent working towards product goals.
           </li>
           <li>
             Deep-dive to CSS. While most of the UI "legwork" was done by
@@ -67,25 +60,13 @@
             "mold" a framework exactly to your needs.
           </li>
           <li>
-            Data normalisation. In the demo app and repository you may see that
-            I loop through a local dataset to render content. It's kept this way
-            for the dummy data prototype (client demos etc), but the in the
-            production version it's been thoroughly reworked to accommodate API
-            calls that retrieve normalised data. This allows splitting up the
-            code in components more conveniently, since the whole thing no
-            longer depends on the giant "mother array".
+Dynamic content. Most of the content relies on user roles, company features and survey feedback statistics. This meant that the interface had to visually distinguish all scenarios: different metrics, insufficient data, incorrect data, errors etc. A lot of care also went into refreshing content correctly upon changing the selected team/user (Vue reactivity is tricky sometimes!).
           </li>
+
           <li>
-            Lifecycle hooks. Something I didn't have a chance to practice prior
-            my internship, but as I worked on a project where component data was
-            retrieved via API calls, asyncronous tasks and mounted() hook became
-            my best friends!
+           Design. While the overall feel of the app had to remain rather conservative due to our specific client base, I added a personal touch here and there with company brand illustrations and animated login-screens. 
           </li>
-          <li>
-            Cute login screen. Practiced my asyncronous skills and sequencing by
-            making a more personalised login UX for our project.
-          </li>
-          <img class="mt-2" style="max-width: 500px" src="@/assets/images/login.gif">
+       
         </ul>
       </template>
     </ProjectBrief>

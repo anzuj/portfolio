@@ -50,6 +50,11 @@ Vue.use(VueRouter)
         component: () => import('../views/projects/Signup.vue')
       },
       {
+        path: 'beadinghub',
+        name:"beadinghub",
+        component: () => import('../views/projects/Beadinghub.vue')
+      },
+      {
         path: 'hireme',
         name:"hireme",
         component: () => import('../views/projects/Hireme.vue')

@@ -70,6 +70,21 @@ export default {
   components: {},
   data: () => ({
     projects: [
+    {
+        title: "Beadinghub",
+        link: "beadinghub",
+        image: "beadinghub",
+      },
+      {
+        title: "Teambarometer",
+        link: "discussion",
+        image: "discussion",
+      },
+      {
+        title: "Signup flow",
+        link: "signup",
+        image: "signup",
+      },
       {
         title: "Sapling business homepage",
         link: "sapling",
@@ -91,16 +106,8 @@ export default {
         image: "hireme",
       },
 
-      {
-        title: "Feedback manager",
-        link: "discussion",
-        image: "discussion",
-      },
-      {
-        title: "Signup flow",
-        link: "signup",
-        image: "signup",
-      },
+
+   
     ],
   }),
   methods: {},

@@ -101,6 +101,11 @@ export default {
   components: {},
   data: () => ({
     techItems: [
+    {
+        img: null,
+        icon: "devicon-firebase-plain colored",
+        text: "Firebase",
+      },
       {
         img: null,
         icon: "devicon-nodejs-plain colored",
@@ -112,6 +117,8 @@ export default {
         text: "Webpack",
       },
       { icon: null, img: "vue", text: "VueJS" },
+      { icon: null, img: "vue", text: "VueJS 3" },
+      { icon: null, img: "vite", text: "Vite" },
       {
         img: "vuetify",
         icon: null,
@@ -172,6 +179,13 @@ export default {
         icon: "devicon-react-original colored",
         text: "ReactJS",
       },
+      {img: null,
+      icon: "devicon-typescript-plain colored",
+    text: "TypeScript"},
+
+    {img: "quasar",
+      icon: null,
+    text: "Quasar"}
     ],
   }),
   methods: {},
