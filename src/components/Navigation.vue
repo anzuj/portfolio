@@ -95,7 +95,7 @@ export default {
       { text: "PORTFOLIO", link: "/portfolio", icon: null },
       {
         text: "CV",
-        link: "https://www.anzudev.com/cv.pdf",
+        link: "https://www.anzudev.work/cv.pdf",
         icon: null,
       },
       { text: "GALLERY", link: "/gallery", icon: null },
