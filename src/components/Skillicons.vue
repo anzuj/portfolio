@@ -112,7 +112,7 @@ export default {
           },
           {
             img: "ts",
-            icon: "devicon-typescript-plain",
+            icon: "devicon-typescript-plain colored",
             text: "TypeScript",
             description:
               "Typed objects and classes make it easier to maintain the codebase.",
