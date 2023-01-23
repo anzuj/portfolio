@@ -111,6 +111,13 @@ export default {
             description: "A natural companion for VueJS applications.",
           },
           {
+            img: "ts",
+            icon: "devicon-typescript-plain",
+            text: "TypeScript",
+            description:
+              "Typed objects and classes make it easier to maintain the codebase.",
+          },
+          {
             icon: "devicon-css3-plain colored",
             img: null,
             text: "CSS",
@@ -195,15 +202,9 @@ export default {
             icon: "devicon-react-original colored",
             text: "ReactJS",
             description:
-              "In the middle of an online ReactJS bootcamp. I've built basic to-do apps to get the grasp on React state management and how it differs from Vue",
+              "I've built basic to-do apps to get the grasp on React state management and how it differs from Vue.",
           },
-            {
-            img: "ts",
-            icon: null,
-            text: "TypeScript",
-            description:
-              "Learning TypeScript via Maximilian Schwarzmüller's Udemy course to powercharge my applications in the future",
-          },
+  
         ],
       },
     ],
