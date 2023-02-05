@@ -6,6 +6,10 @@ import store from './store'
 
 require('@/styles/main.css')
 
+import Particles from "vue2-particles";
+
+Vue.use(Particles);
+
 Vue.config.productionTip = false
 
 new Vue({

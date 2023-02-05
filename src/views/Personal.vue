@@ -27,15 +27,16 @@ In 2019 I followed my heart to Switzerland. I live here now with my husband and 
 </v-row>
 
    
-<p>Before Covid-19 restricted travel you could sometimes find me in Poland, in a castle of Czocha with a hundred other LARPing enthusiasts.Running around in pointy hats and shouting spells is undoubtedly a great way to escape the routine and inject some magic in your life. You need only ask and I can talk for hours about the mayhem that has taken place in that castle.</p>
+<p class="mt-3">Sometimes I run around in a pointy hat and shout spells. Why? Because LARPing (live action roleplaying) is a great way to escape the routine and inject some magic in your life. You need only ask and I can talk for hours about the mayhem that has taken place in some Polish castles.</p>
+
+<p>At home I like to spend time with creative arts, mostly creating jewelry with beadweaving. I'm at my happiest when I can create some pretty pixels during the day and some pretty pendants at night :)</p>
 
 <h3>Some random facts:</h3>
 
 <ul>
   <li>I named one of our cats Leeroy Jenkins as a tribute to my World of Warcraft raiding days.</li>
   <li>Harry Potter and Witcher franchises have my heart.</li>
-  <li>I'm at my happiest when I'm elbow deep in some DIY project or a good book.</li>
-  <li>Nerdy side in me adores boardgames. Current favourite is Everdell. I could sit up for hours crafting tiny components and painting miniatures.</li>
+  <li>Boardgame enthusiast! Current favourite is Everdell for which I've handcrafted custom components.</li>
   </ul>
 
 
