@@ -185,7 +185,12 @@ export default {
 
     {img: "quasar",
       icon: null,
-    text: "Quasar"}
+    text: "Quasar"},
+    {
+        icon: "devicon-materialui-plain colored",
+        img: null,
+        text: "Material UI",
+      },
     ],
   }),
   methods: {},

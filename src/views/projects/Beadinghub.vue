@@ -4,8 +4,8 @@
 
     <ProjectBrief
       :screenshot="'beadinghub'"
-      :demo="'https://youtu.be/Bnlbswk-_ME'"
-      :tech="['VueJS 3','Quasar', 'Firebase', 'CSS', 'Vite']"
+      :live="'https://beadhub-react.web.app/'"
+      :tech="['ReactJS','Material UI','Firebase', 'TypeScript','CSS']"
     >
 
       <template v-slot:title>
@@ -21,31 +21,30 @@
       <template v-slot:brief>
 
         <h4>Goal</h4>
-       Create an app to easily sort and manage beading
-        patterns instead of a huge Google Drive folder that didn't offer enough organising methods.
+         Create an app to easily sort and manage beading patterns instead of a huge Google Drive folder that doesn't offer sufficient organising methods. Should be usable on the phone so that the user could upload photos from their gallery.
       </template>
 
       <template v-slot:learning>
 
         <ul>
+
           <li>
-             Firebase. I wanted easy sign-on with Google authentication and also to upload PDFs and images
-            when needed.
+             Firebase. I wanted to offer an easy sign-on with Google authentication and also the ability to upload files when needed. A lot of async practice here! Since the data is actually coming from Firebase storage, it was necessary to create good util functions that handle multiple API calls allowing certain operations only once the preliminary tasks are done.
+          </li>
+          
+          <li>
+             ReactJS. Before I've primarily worked with VueJS, so this was a chance to get comfortable
+            with ReactJS. It took a bit of time to get used to a more verbose syntax and controlled forms, but a few weeks into the project it felt more and more natural.
           </li>
 
           <li>
-            Quasar. It's good to have multiple JS frameworks under one's belt! I chose to build this
-            app with Quasar + Vite to reduce the bundle size and enhance compiling speed compared to
-            webpack.
+            Material UI. It's good to have multiple frontend libraries under one's belt! This project involves a lot of practice with the sx prop and making reusable custom styled Material UI components. 
           </li>
-          <li>VueJS 3. Before I've primarily maintained VueJS 2 apps, so this was a chance to get comfortable with Vue 3 class component syntax. It took a bit of time to get used to, but by the end of the project I definitely saw the benefits of being able to organize component code in a more logical sequence.</li>
 
-          <li>
-            JS Promises. It was important to check multiple things when creating a new pattern that
-            may also include multiple uploads. It was necessary to create a good util function that
-            handles multiple API calls allowing me to only upload once the preliminary tasks are
-            done.
-          </li>
+
+ 
+          <li>Image compression. Database storage is costly, therefore I wanted to make sure that user uploads are properly compressed, taking up no more space than a thumbnail needs. I used compressorjs library for this.</li>
+          <li>TypeScript. Lots of learning points here, especially when it comes to React component prop typing. It's become second nature now to declare a type to a variable as soon as I create one which is a nice feeling!</li>
 
         </ul>
 
